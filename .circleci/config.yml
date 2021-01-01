@@ -29,10 +29,10 @@ jobs:
 workflows:
   welcome:
     jobs:
-      - welcome
+      - build
       - test:
           requires: 
-            - welcome
+            - build
       - analyze:
           requires: 
             - test
