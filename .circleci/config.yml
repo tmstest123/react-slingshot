@@ -30,9 +30,9 @@ workflows:
   welcome:
     jobs:
       - welcome
-      - test
+      - test:
           requires: 
             - welcome
-      - analyze
+      - analyze:
           requires: 
             - test
